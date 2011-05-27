@@ -1,0 +1,4 @@
+USERNAME=bitcoin_address
+PASSWORD=x
+HOST=eu.mining.eligius.st
+PORT=8337
