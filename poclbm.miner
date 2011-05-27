@@ -1,2 +1,2 @@
-MINER="cd ~/poclbm && ./poclbm.py -u \$USERNAME --pass \$PASSWORD -o \$HOST -p \$PORT -v -w 64 \$MODIFIERS_POCLBM"
+MINER="cd ~/poclbm && ./poclbm.py -u \$USERNAME --pass \$PASSWORD -o \$HOST -p \$PORT -v -w 64 \$MODIFIERS_POCLBM \$MODIFIERS_POOL"
 
