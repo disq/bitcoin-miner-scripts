@@ -1,0 +1,4 @@
+USERNAME=email@address_worker
+PASSWORD=secret
+HOST=deepbit.net
+PORT=8332
