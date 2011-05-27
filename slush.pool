@@ -1,0 +1,4 @@
+USERNAME=user.worker
+PASSWORD=secret
+HOST=mining.bitcoin.cz
+PORT=8332
