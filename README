@@ -1,1 +1,4 @@
-run with ./run.sh <one miner> <one device> <and one pool script>
+run with ./run.sh <one device> <one pool script> <and one miner>
+
+Example:
+./run.sh 5850.device btcguild.pool phoenix.miner
