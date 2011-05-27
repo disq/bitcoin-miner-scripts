@@ -1,0 +1,1 @@
+MINER="cd ~/DiabloMiner && ./DiabloMiner-Linux.sh -l http://\$USERNAME:\$PASSWORD@\$HOST:\$PORT/ -w 64 -v 2 \$MODIFIERS_DIABLO"
