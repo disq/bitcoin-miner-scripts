@@ -1,20 +1,28 @@
 #!/bin/bash
 declare -a PARAMS
+PMODE=0
 for i in $*; do
-	if [ -e $i ]; then
-		echo "Reading $i"
-		source $i
-	elif [ -e [ "./$i" ]; then
-		echo "Reading ./$i"
-		source ./$i
-	else
+	if [ $PMODE == 1 ]; then
 		echo "new param: $i"
 		PARAMS[${#PARAMS[*]}]=$i
+	else
+		if [ "$i" == "-P" ]; then
+			PMODE=1
+		elif [ -e $i ]; then
+			echo "Reading $i"
+			source $i
+		elif [ -e "./$i" ]; then
+			echo "Reading ./$i"
+			source ./$i
+		else
+			echo "Not understood: $i"
+			exit 1
+		fi
 	fi
 done
 if [ "$MINER" == "" ]; then
     echo \$MINER not set, exiting
-    echo Usage: $0 one.device one.pool one.miner [extra file] [extra params [extra params [ ... ]]]
+    echo Usage: $0 one.device one.pool one.miner [extra file] [-P extra params [extra params [ ... ]]]
     exit 1
 fi
 while true; do
