@@ -1,0 +1,4 @@
+USERNAME=namecoin_address
+PASSWORD=x
+HOST=pool.namebit.org
+PORT=9098

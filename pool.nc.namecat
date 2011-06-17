@@ -1,0 +1,4 @@
+USERNAME=username.workername
+PASSWORD=worker_password
+HOST=namecoin-pool.dyndns.org
+PORT=8338
