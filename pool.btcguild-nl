@@ -1,0 +1,4 @@
+USERNAME=user_worker
+PASSWORD=worker_password
+HOST=nl.btcguild.com
+PORT=8332
